@@ -87,3 +87,5 @@ app.delete("/api/notes/:id", authMiddleware, async (req, res) => {
 });
 
 app.listen(5000, () => console.log("Server running on http://localhost:5000"));
+
+const supabase = createClient("SUPABASE_URL", "SUPABASE_ANON_KEY");
